@@ -70,7 +70,6 @@ npm install
 
  - A sample example is shown here when we hit the route on Postman.
 
-
   ![](examples/sample4.png)
 
 ## Cache Database Schema
@@ -82,9 +81,9 @@ npm install
              |___ translation
 
  ```
-![](examples/daatabase.png)
+ ![](examples/daatabase.png)
 
-  ## Design Decisions
+## Design Decisions
 
   - Used MongoDB as the database since there would be three fields provided by the user and a fourth field would be the translated text, and for managing these four fields it's   best to store the data in the form of JSON
   - For the smartcaching, it stores the translation of the given text in all the languages related to the target language because a user is also likely to translate the same text to the related languages
@@ -104,23 +103,22 @@ npm install
 
   -Following is the result for converting "how are you" source_lang = english to target_lang=gujrati
 
-              ![](examples/sample2.png)
+ ![](examples/sample2.png)
 
-        I verified my code for different test cases and checked that it shouldn't contain similar data in the database. If the data is already available for the given input it should return the output from there only and should not hit the API for that. I checked the database for the same with different and similar queries, and also checked for the different sections of the code so that only that part of the code works which is required for the particular query.
+  I verified my code for different test cases and checked that it shouldn't contain similar data in the database. If the data is already available for the given input it should return the output from there only and should not hit the API for that. I checked the database for the same with different and similar queries, and also checked for the different sections of the code so that only that part of the code works which is required for the particular query.
 
   Translation for "My name is Bipul . I am pursuing Bachelor's in Computer Science at NIT Kurukshetra "
-         ![](examples/sample1.png)
+  ![](examples/sample1.png)
   Translations for similar languages (Smart Caching)
 
-    ![](examples/sample2.png)
+  ![](examples/sample2.png)
 
-  ## Further Improvements
+## Further Improvements
   1. Instead of taking language code from the user we can just have the name of the source and the target language. A separate table can be created in the database in which we can store the languages with their language codes and then get the language code from the database to pass it to the API.
 
   2. Instead of storing strings in the database we can do the operation on the words of the string, and we can store the individual words. Now for each input string, we would break down the string into words and store those words into database. After a reasonable number of translations, our database would be containing enough words to make meaningful sentences. We can make a separate machine learning model to train the dataset. This would account for a decreased API cost but a complex database.
 
-
-  ## NPM packages used
+## NPM packages used
 
       - mongoose
       - dotenv
@@ -129,7 +127,7 @@ npm install
       - nodemon
       - express
 
-  ## Author
+## Author
 
       Name: Bipul Kumar
 
