@@ -69,9 +69,9 @@ npm install
      <br/>A list of all [ISO Language Codes](https://datahub.io/core/language-codes/r/0.html) is attached here.
 
  - A sample example is shown here when we hit the route on Postman.
-  <img src="https://github.com/Bipul1604/translation-smartCaching/tree/master/examples/sample4.png" style="width: 30%; height:100%;" />
-      
+  <img src="examples/sample4.png" style="width: 30%; height:100%;" />
 
+  ![](examples/sample1.png)
 
 ## Cache Database Schema
  ```
