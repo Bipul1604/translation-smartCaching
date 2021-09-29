@@ -81,7 +81,7 @@ npm install
              |___ translation
 
  ```
- ![](examples/daatabase.png)
+ ![](examples/daatabse.png)
 
 ## Design Decisions
 
