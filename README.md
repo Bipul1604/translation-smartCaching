@@ -69,7 +69,7 @@ npm install
      <br/>A list of all [ISO Language Codes](https://datahub.io/core/language-codes/r/0.html) is attached here.
 
  - A sample example is shown here when we hit the route on Postman.
- ![]<img src="../examples/database.JPG" style="width: 30%; height:100%;" />
+ ![]<img src="../examples/sample4.png" style="width: 30%; height:100%;" />
 
 
 
@@ -83,7 +83,7 @@ npm install
 
  ```
 
- <img src="./table1.JPG" style="width: 30%; height:100%;" />
+ <img src="../examples/database.png" style="width: 30%; height:100%;" />
 
   ## Design Decisions
 
@@ -105,17 +105,17 @@ npm install
 
   -Following is the result for converting "how are you" source_lang = english to target_lang=gujrati
 
-  <img src="./query1.JPG" style="width: 30%; height:100%;" />
+  <img src="../examples/sample3.png" style="width: 30%; height:100%;" />
 
   -I verified my code for different test cases and checked that it shouldn't contain similar data in the database. If the data is already available for the given input it should return the output from there only and should not hit the API for that. I checked the database for the same with different and similar queries, and also checked for the different sections of the code so that only that part of the code works which is required for the particular query.
 
   Translation for "My name is Bipul . I am pursuing Bachelr's in Computer Science at NIT Kurukshetra "
 
-  <img src="../examples/sample1.JPG" style="width: 30%; height:100%;" />
+  <img src="../examples/sample1.png" style="width: 30%; height:100%;" />
 
   Translations for similar languages (Smart Caching)
 
-  <img src="../examples/sample2.JPG" style="width: 30%; height:100%;" />
+  <img src="../examples/sample2.png" style="width: 30%; height:100%;" />
 
   ## Further Improvements
   1. Instead of taking language code from the user we can just have the name of the source and the target language. A separate table can be created in the database in which we can store the languages with their language codes and then get the language code from the database to pass it to the API.
@@ -139,3 +139,4 @@ npm install
       Email: bipul1604@gmail.com
 
       Phone No.: +91 9950214801
+     github :https://github.com/Bipul1604/translation-smartCaching/tree/master
